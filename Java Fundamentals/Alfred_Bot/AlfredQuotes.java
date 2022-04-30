@@ -8,20 +8,29 @@ public class AlfredQuotes {
     
     public String guestGreeting(String name) {
         // YOUR CODE HERE
-        System.out.println("Hello," +name+ "Lovely to see you");
-        return "place holder for guest greeting return string";
+        //System.out.println("Hello," +name+ "Lovely to see you");
+        return String.format("Good %s. Lovely to see you.", name);
     }
     
     public String dateAnnouncement() {
-        // YOUR CODE HERE
-        return "place holder for date announcement return string";
+        Date date = new Date();
+        return "Current date is: " + date;
+        
     }
     
-    public String respondBeforeAlexis(String conversation) {
+    public String respondBeforeAlexis(String conv) {
         // YOUR CODE HERE
-        return "for snarky response return string";
+        if(conv.indexOf("Alexis") > -1) {
+            return "Right away, sir. She certainly isn't sophisticated enough for that.";
+        }
+
+        if (conv.indexOf("Alfred") > -1) {
+            return "At your service. As you wish, naturally.";
+        }
+
+        return "Right. And with that I shall retire.";
     }
-    
+
 	// NINJA BONUS
 	// See the specs to overload the guessGreeting method
     // SENSEI BONUS
