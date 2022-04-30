@@ -23,10 +23,10 @@ public class TestCafe {
         System.out.println("----- Display Menu Test-----");
         
         List<String> loadMenu = Arrays.asList(
-            "drip coffee",
-            "cappucino",
-            "latte",
-            "mocha"
+            "  drip coffee",
+            "  cappucino",
+            "  latte",
+            "  mocha"
         );
         ArrayList<String> menu = new ArrayList<String>();
         menu.addAll(loadMenu);

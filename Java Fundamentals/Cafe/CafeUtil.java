@@ -18,7 +18,8 @@ public class CafeUtil {
     }
     public void displayMenu(ArrayList<String> menuItems){
         for (int j=0; j<menuItems.size(); j++){
-            System.out.println( j + menuItems.get(j));
+            String item=menuItems.get(j);
+            System.out.println( j + item);
 
         }
     }
