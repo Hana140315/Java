@@ -1,3 +1,4 @@
+
 package com.axsos.SearchQ.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,8 @@ public class SerchQ {
 		}
 		else {
 		
-        return "Hello Human: " + searchQuery +lastName;
+       String RepName= "Hello Human: " + searchQuery +lastName +"/////////// ";
+       return RepName.repeat(times);
     }
 	
 	}
