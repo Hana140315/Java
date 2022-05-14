@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+.wrapper{
+	display:flex;
+}
+
+.loc{
+	width:25%;
+	height: 25vh;
+	background-color:gray;
+	
+}
+.act{
+	border: 1pt solid;
+	
+}
