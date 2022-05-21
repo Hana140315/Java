@@ -30,12 +30,12 @@
 			<th>Author Name</th>
 			<th>Posted By</th>
 			</tr>
-			<c:forEach var="book" items="${books}">
+			<c:forEach var="book" items="${allBooks}"> 
 			<tr>
 			<td><c:out value="${book.id }"/></td>
-			<td> <a href="/books/{book.id}" style="text-decoration: none;"> ${book.title}  </a> </td>
+			<td><a href="/books/${book.id }"><c:out value="${book.title}"/> </a></td>
 			<td><c:out value="${book.author }"/></td>
-			<td><c:out value="${user.id }"/></td>
+			<td><c:out value="${book.user.userName }"/></td>
 			</tr>
 			</c:forEach>
 			</table>

@@ -20,13 +20,13 @@
 	<table>
 		<tr>
 			<th><h1> Add a Book to your Shelf!</h1></th>
-			<th><a href="sucess" style="text-decoration: none;"> back to the shelves</a></th>
+			<th><a href="/books" style="text-decoration: none;"> back to the shelves</a></th>
 		</tr>
 		<tr>
 			<td colspan="2"> <h3> Author must not be Blank</h3></td>
 		</tr>
 		<tr>
-			<th> <form:form action="/new" method="post" modelAttribute="newBook">
+			<th> <form:form action="/books/new" method="post" modelAttribute="newBook">
 	
 	                    <form:label path="title" for="floatingInput">Title:</form:label>
 	                    <form:input path="title" type="text" class="form-control mt-4" placeholder="Title" /><br><br>

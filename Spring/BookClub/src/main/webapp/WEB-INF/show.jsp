@@ -18,15 +18,22 @@
 <table>
 		<tr>
 			<th><h1><c:out value="${book.title }"/></h1></th>
-			<th> <a href="/sucess" style="text-decoration: none;">back to shelf</a>" </th>
+			<th> <a href="/books" style="text-decoration: none;">back to shelf</a>" </th>
 		</tr>
 		<tr>
-			<td colspan="2"><h1><c:out value="${user.username }"/> read <c:out value="${book.title }"/> by <c:out value="${book.author}"/></h1> </td>
-			<td colspan="2"><h2>Here are Bella's thoughts:</h2></td>
+			<td colspan="2"><h1><c:out value="${book.user.userName }"/> read <c:out value="${book.title }"/> by <c:out value="${book.author}"/></h1> </td>
+		</tr>
+		<tr>
+			<td colspan="2"><h2>Here are <c:out value="${book.user.userName }"/> thoughts:</h2></td>
+		</tr>
+		<tr>
 			<td colspan="2"><p> <c:out value="${book.thought }"/></p></td>
 		</tr>
 		
 </table>
+	 <div class="mt-4">
+		<a href="/books/edit/${book.id }" style="text-decoration: none;">Update</a>" 
+	</div>
 
 </body>
 </html>

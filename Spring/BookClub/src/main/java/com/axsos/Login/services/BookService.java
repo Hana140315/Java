@@ -1,12 +1,10 @@
 package com.axsos.Login.services;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
-import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.BindingResult;
 
 import com.axsos.Login.models.Book;
 import com.axsos.Login.repositories.BookRepo;
@@ -24,8 +22,8 @@ public class BookService {
     }
 
 
-	public ArrayList<Book> findAll(){
-		return (ArrayList<Book>)bookRepo.findAll();
+	public List<Book> findAll(){
+		return (List<Book>)bookRepo.findAll();
 	}
 	
 	public Book findById(Long bookId) {

@@ -44,7 +44,7 @@ public class LogRegController {
 	            // Be sure to send in the empty LoginUser before 
 	            // re-rendering the page.
 	            model.addAttribute("newLogin", new LoginUser());
-	            return "sucess.jsp";
+	            return "LogReg.jsp";
 	        }
 	        
 	        // No errors! 
@@ -80,10 +80,10 @@ public class LogRegController {
 	    		Long userId=(Long)session.getAttribute("userId");
 	    		User currenUser=userServ.findbyId(userId);
 	    		model.addAttribute("currentUser", currenUser);
-	    	 	return "sucess.jsp";
+	    	 	return "redirect:/books";
 	    	}
 	    System.out.println("***********************");
-	    	return "redirect:/";
+	    	return "redirect:/login";
 	    }
 	    
 	    @GetMapping("/logout")
